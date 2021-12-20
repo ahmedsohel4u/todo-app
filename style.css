@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    background-color: #fff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 3px;
+}
+.container h1 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+#user-value {
+    width: 300px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #dfdfdf;
+    margin: 10px 0;
+}
+#user-value:focus {
+    outline: 1px solid blueviolet;
+}
+.input-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.plus-icon {
+    background-color: blueviolet;
+    padding: 11px 15px;
+    margin: 3px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+}
+.plus-icon-disabled {
+    background-color: rgba(137, 43, 226, 0.3);
+    padding: 11px 15px;
+    margin: 3px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+}
+.plus-icon:hover {
+    cursor: pointer;
+}
+.task-name {
+    background-color: #ededed;
+    padding-left: 14px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 3px;
+    color: rgb(88, 88, 88);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.task-name span {
+    position: relative;
+    right: -45px;
+    background-color: rgb(240, 45, 45);
+    padding: 15px;
+    font-weight: 800;
+    color: #fff;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    transition: .3s all ease-in-out;
+}
+.task-name:hover span{
+    cursor: pointer;
+    right: 0;
+}
+.clear-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 30px;
+}
+.clear-btn {
+    text-transform: capitalize;
+    padding: 8px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 3px;
+}
+.clear-btn-disabled {
+    text-transform: capitalize;
+    padding: 8px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgba(137, 43, 226, 0.301);
+    color: #fff;
+    border-radius: 3px;
+}
+.clear-btn:hover {
+    cursor: pointer;
+}
